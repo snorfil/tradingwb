@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+  border: 1px solid blue;
+  width: 100%;
+  float: left;
+}
+
+div {
+  margin: 5px;
+  width: 50px;
+  height: 150px;
+}
+
+.left {
+  float: inline-end;
+  background: pink;
+}
+
+.right {
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-left: 10%;
+  background: cyan;
+}
+    </style>
+</head>
+<body>
+
+    <h1>Ejercicio 5</h1>
+    <nav>
+        <a href="ejercicio4.html">Ejercicio 4</a>
+        <a href="ejercicio5.html">Ejercicio 5</a>
+        <a href="ejercicio6.html">Ejercicio 6</a>
+    </nav>
+    <form>
+        <fieldset >
+            <legend>Datos personales</legend>
+            <p>
+                <label>Nombre:</label>
+                <input type="text" placeholder="Su nombre">
+            </p>
+            <p>
+                <label>Apellido:</label>
+                <input type="text" placeholder="Su apellido" required minlength="2" maxlength="20">
+            </p>
+            <p>
+                Género:
+                <label>Hombre <input type="radio" name="genero" value="H"></label>
+                <label>Mujer <input type="radio" name="genero" value="M"></label>
+                <label>Otro <input type="radio" name="genero" value="O"></label>
+                
+            </p>
+
+            <p><label>Fecha de Nacimiento: <input type="date" title="Todos los numeros y letras" name="nacimiento" 
+                    min="1992-01-02" max="2022-01-05"></label>
+            </p>
+        
+            <p>
+                <label>D.N.I: <input type="text" size="6" placeholder="Número DNI" required></label> 
+            </p>
+
+        </fieldset>  
+        <fieldset>
+            <legend>Datos de Contacto</legend>
+            <p><label>Teléfono fijo: <input type="tel" maxlength="10"></label></p>
+            <p><label>Teléfono móvil: <input type="tel" maxlength="10"></label></p>
+            <p><label>eCorreo: <input type="email" maxlength="10"></label></p>
+        </fieldset>   
+
+        <fieldset>
+            <legend>Datos de ingreso/inicio de sesión</legend>
+            <p><label>Usuario: <input type="text" maxlength="10"></label></p>
+            <p><label>Contraseña: <input type="password" maxlength="10"></label></p>
+    
+        </fieldset>   
+
+        <fieldset>
+            <legend>Domicilio</legend>
+            <p><label>Calle: <input type="text" maxlength="10"></label></p>
+            <p><label>Ciudad: <input type="number" maxlength="10"></label></p>
+            <p><label>Codigo postal: <input type="text" maxlength="10"></label>
+            <label>Provincia: <input list="lista" name="provincia" id="procincia">
+                <datalist id="lista">
+                  <option value="La rioja" La rioja>
+                  <option value="Extemadura">
+                  <option value="Andalucia">
+                  <option value="Navarra">
+                </datalist>
+            </label>
+            </p>
+            <p>
+                <section>
+                    <div class="left">1</div>
+                    <div class="left">2</div>
+                    <div class="right">3</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                       Morbi tristique sapien ac erat tincidunt, sit amet dignissim
+                       lectus vulputate. Donec id iaculis velit. Aliquam vel
+                       malesuada erat. Praesent non magna ac massa aliquet tincidunt
+                       vel in massa. Phasellus feugiat est vel leo finibus congue.</p>
+                  </section>
+            </p>
+    
+        </fieldset>   
+    </form>
+</body>
+</html>

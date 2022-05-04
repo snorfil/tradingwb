@@ -1,0 +1,9 @@
+table,td {
+    border: 1px black solid;
+    border-collapse: collapse;
+}
+td:hover{
+    color: aqua;
+    background-color: blue;
+}
+

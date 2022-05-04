@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>pruebas</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="prueba.css" type="text/css">
+    <script src="chart.js"></script>
+</head>
+<body>
+    <div class="layout_principal">
+        <picture>
+            <source srcset="foto.jpg">
+            <img src="foto.jpg" alt="No tienes la foto">
+           </picture>
+           
+        
+        <div class="menu">
+            <div>3</div>
+            <div>55</div>
+            <div>3</div>
+        </div>
+       
+    </div>
+    <div class="box">
+        BOX
+    </div>
+    <canvas id="myChart"></canvas>
+ 
+    <script>
+        var lista = [10,2,1,3,4,5,2,6,3,4,2,8,9,4]
+        var nombres = []
+        for (var i = 0; i < lista.length; i++) {
+                nombres.push('nombre' + i)
+                }
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+        type: 'line',
+        data:{
+        datasets: [{
+            data: lista,
+            backgroundColor: ['#111'],
+            label: 'Comparacion de navegadores'}],
+            labels:nombres},
+        options: {responsive: true}
+    });
+    </script>
+</body>
+</html>

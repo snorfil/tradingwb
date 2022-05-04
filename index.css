@@ -1,0 +1,41 @@
+.sabado{
+
+    color: rgb(0, 68, 255);
+    text-align: center
+}
+.domingo{
+    color: rgb(255, 1, 1);
+    text-align: center
+}
+color{
+    color: #C00;
+}
+
+.calendario{
+width: 100%;
+border: 1px solid #f00;
+border-collapse: collapse;
+}
+.titulo_calendario{
+    text-align: left;
+    margin-left: 5%;
+}
+.t_semana{
+    text-align: center;
+    margin-left: 5%;
+}
+#t_semana{
+    text-align: center;
+    margin-left: 5%;
+}
+td{
+    border-collapse: collapse;
+    border: none;
+    text-align: center;
+    border:1px solid #C00;
+
+}
+body{
+    background: radial-gradient(circle,#ff2,#f4f);
+
+}

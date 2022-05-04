@@ -1,0 +1,36 @@
+table,td,th{
+    border: 1px black solid;
+    text-align: center;
+    border-collapse: collapse;
+}
+.t_t3{
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+.f_b{
+    background-color: hsl(180, 40%, 66%);
+}
+.f_w{
+    background-color: white
+}
+.t_1{
+    text-align: left;
+}
+.t_2{
+    width: 50%;
+}
+
+#total{
+    color: red;
+}
+#ani_0{
+    background-color: red;
+}
+#titulo_animales{
+    color: aliceblue;
+    background-color: rgb(65, 63, 63);
+}
+thead{
+    background-color: rgb(138, 133, 133);
+}
