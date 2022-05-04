@@ -1,27 +1,3 @@
- var lista = [];
-
-pintarPrueba();
-
- async function request(){
-
-    var req = new XMLHttpRequest();
-    await req.open('GET', 'https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=5m', false);
-    req.send(null);
-    if (req.status == 200)
-        dump(req.responseText);
-        let aux = JSON.parse(req.responseText);
-    
-        for (let i = 0; i < aux.length; i++) {
-            lista.push(aux[i][3])
-            //lista_2.push(aux[i][5])
-            
-        }
-    //pintar() 
-    pintarPrueba()
-}
-function crearDataset(){
-    return 
-}
 function pintarPrueba(){
     const labels = [
         'January',
