@@ -36,9 +36,21 @@
 
 
 
+    <table id="selectores">
+      <td> <select id="bnb_selector">
+        </select>
+      </td>
+      <td>    <select id="btc_selector">
+      </select></td>
+      <td> <select id="usdt_selector">
+      </select></td>
+      <td>   
+        <select id="eth_selector">
+        </select></td>
+    </table>
+   
 
-    <select id="selector">
-    </select>
+
     <table>
         <caption>Intervalo</caption>
         <tr>
@@ -61,7 +73,7 @@
 
          <canvas id="myChart" auto;> 
         </canvas>
-    <div onclick="pintarPrueba()">Request</div>
+
     
     <footer id="pie">
         <p>Author: Edwin leandro montoya osorio</p>
@@ -73,8 +85,11 @@
         window.onload = function(){
           getDataOf("BTCUSDT");
           pares();
-        
+  
         };
+
+
+
       </script>
 </body>
 </html>
