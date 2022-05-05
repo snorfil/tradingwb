@@ -16,35 +16,46 @@ async function pares(){
         dump(req.responseText);
         let aux = JSON.parse(req.responseText);
 
-    
+        let isiN = false;
     
         for (let i = 0; i < aux.length; i++) {
 
             cadena = aux[i]['symbol'];
-
-            console.log(cadena);
+            isiN = false;
             if(/^BNB/.test(cadena)){
-                bnbData.push(cadena);
+                cadena = [cadena.slice(0, 3), "/", cadena.slice(3)].join('');
+                //bnbData.push(cadena);
                 id = "bnb_selector";
+                isiN = true;
               
             }
             else if(/^BTC/.test(cadena))
             {
-                btcData.push(cadena);
+                cadena = [cadena.slice(0, 3), "/", cadena.slice(3)].join('');
+                //btcData.push(cadena);
                 id = "btc_selector";
+                isiN = true;
             }
             else if(/^USDT/.test(cadena))
             {
-                usdtData.push(cadena);
+                cadena = [cadena.slice(0, 4), "/", cadena.slice(4)].join('');
+                //usdtData.push(cadena);
                 id = "usdt_selector";
+                isiN = true;
             }
             else if(/^ETH/.test(cadena))
             {
-                ethData.push(cadena);
+                cadena = [cadena.slice(0, 3), "/", cadena.slice(3)].join('');
+                //ethData.push(cadena);
                 id = "eth_selector";
+                isiN = true;
             }
 
-            setOptionOn(id,cadena)
+            if(isiN)
+            {
+              setOptionOn(id,cadena)
+            }
+      
                 
            
         }
